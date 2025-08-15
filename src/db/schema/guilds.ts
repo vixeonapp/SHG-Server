@@ -1,3 +1,4 @@
+import { InferSelectModel } from 'drizzle-orm';
 import { bigint, pgTable, varchar } from 'drizzle-orm/pg-core';
 
 export const guilds = pgTable('guilds', {
@@ -9,3 +10,6 @@ export const guilds = pgTable('guilds', {
   banner_color: varchar({ length: 6 }), // hex code (FFFFFF)
   file_limit: bigint({ mode: 'number' }).notNull().default(0), // in bytes
 });
+
+// SHGS SIDE
+export type SHGuild = InferSelectModel<typeof guilds>;

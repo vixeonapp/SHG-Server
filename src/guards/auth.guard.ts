@@ -18,7 +18,10 @@ export class JwtAuthGuard implements CanActivate {
 
   async canActivate(context: ExecutionContext): Promise<boolean> {
     const request = context.switchToHttp().getRequest<RequestWithJwt>();
-    const token = (request.cookies as Record<string, string>)?.access_token;
+    const authHeader = request.headers['authorization'];
+    const token = authHeader?.startsWith('Bearer ')
+      ? authHeader.slice(7)
+      : undefined;
 
     if (!token) {
       throw new UnauthorizedException('Not authorized.');
@@ -32,10 +35,6 @@ export class JwtAuthGuard implements CanActivate {
         throw new UnauthorizedException('Invalid session token');
       }
       if (!payload.iss || !payload.guild_id || !payload.exp) {
-        throw new UnauthorizedException('Invalid session token');
-      }
-
-      if (!payload.iss) {
         throw new UnauthorizedException('Invalid session token');
       }
 

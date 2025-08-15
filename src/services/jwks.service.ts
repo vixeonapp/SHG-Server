@@ -1,8 +1,6 @@
-/* eslint-disable @typescript-eslint/no-unsafe-member-access */
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 import { Injectable } from '@nestjs/common';
-import jwksClient, { SigningKey } from 'jwks-rsa';
-import jwt, { JwtPayload as DefaultJwtPayload } from 'jsonwebtoken';
+import { JwksClient, SigningKey } from 'jwks-rsa';
+import { decode, verify, JwtPayload as DefaultJwtPayload } from 'jsonwebtoken';
 
 interface JwtPayload extends DefaultJwtPayload {
   guild_id?: string;
@@ -10,7 +8,7 @@ interface JwtPayload extends DefaultJwtPayload {
 
 @Injectable()
 export class JwksService {
-  private readonly client = jwksClient({
+  private readonly client = new JwksClient({
     jwksUri: process.env.VIXEON_JWKS_URL ?? '',
     cache: true,
     cacheMaxEntries: 5,
@@ -34,7 +32,7 @@ export class JwksService {
   }
 
   async verifyToken(token: string): Promise<JwtPayload> {
-    const decoded = jwt.decode(token, { complete: true }) as {
+    const decoded = decode(token, { complete: true }) as {
       header: { kid: string };
     } | null;
 
@@ -49,7 +47,7 @@ export class JwksService {
     const signingKey = await this.getSigningKeyAsync(decoded.header.kid);
 
     return new Promise<JwtPayload>((resolve, reject) => {
-      jwt.verify(
+      verify(
         token,
         signingKey,
         { algorithms: ['RS256'], issuer: 'vixeon' },
