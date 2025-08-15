@@ -73,4 +73,4 @@ If you’d like to contribute, check out the [contribution guidelines](CONTRIBUT
 
 ## 📜 License
 
-SHGS is [X licensed](LICENSE).
+SHGS is [licensed](LICENSE).
