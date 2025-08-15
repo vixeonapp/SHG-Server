@@ -1,0 +1,206 @@
+# SHGS Public License (SPL) v1.0
+
+---
+
+## 1. Definitions
+
+1.1 **“Software”** means the SHGS program and all associated files, schemas, interfaces, configuration, and documentation distributed by the **Licensor** under this License, including any **Modified Work**.
+
+1.2 **“Source Code”** means the preferred form for making modifications, including all modules, interface definitions, data files, build scripts, and installation information necessary to generate **Object Code** or run the Software.
+
+1.3 **“Object Code”** means any non‑source form of the Software, including compiled binaries and packaged images (e.g., containers).
+
+1.4 **“Modify” / “Modified Work”** means any work that is based on or derived from the Software or any part of it, including by changing, adapting, extending, statically or dynamically linking to it, or combining it into a larger work, other than mere aggregation.
+
+1.5 **“Distribute”** means to make the Software or a Modified Work available to any third party in any form, including by publication of Source Code or Object Code, or by embedding within another work.
+
+1.6 \*\*“Host” / “Provide as a Service” / **“Hosted Service”** means to make the functionality of the Software or a Modified Work available to third parties over a network (including the Internet) as a service, whether or not consideration is charged.
+
+1.7 **“Public Use”** means use by, or provision to, any person other than You and Your organization’s personnel under Your direct control.
+
+1.8 **“Contribution”** means any original work of authorship, including modifications to the Software, submitted intentionally to the Licensor for inclusion in the Software.
+
+1.9 **“Contributor”** means any person or entity that makes a Contribution.
+
+1.10 **“Licensor”** means the copyright holder(s) of the Software identified as **Vixeon** (or its successors/assigns).
+
+1.11 **“Vixeon ToS”** means the Vixeon Terms of Service, as published by the Licensor at [https://vixeonapp.com/terms](https://vixeonapp.com/terms) (or successor URL) and updated from time to time.
+
+1.12 **“Trademarks”** means the names “Vixeon”, “SHGS”, associated logos, and any other trademarks or service marks owned by the Licensor.
+
+1.13 **“System Libraries”** means components (including runtimes) that (a) are normally distributed with, or for use with, a major operating system, development toolchain, or platform; and (b) are not specific to the Software.
+
+---
+
+## 2. Copyright License Grant
+
+Subject to Your continued compliance with this License, the Licensor grants You a worldwide, royalty‑free, non‑exclusive, non‑transferable license to:
+
+(a) **use** and run the Software for any permitted purpose;
+(b) **reproduce** the Software;
+(c) **Modify** the Software and create **Modified Works**; and
+(d) **Distribute** the Software or Modified Works, including as Object Code;
+
+in each case **solely** under the terms and restrictions set out below.
+
+This License does **not** grant any trademark rights (Section 7) and does **not** permit providing a **Hosted Service** except as expressly allowed in Section 4.
+
+---
+
+## 3. Strong Copyleft & Network Source Availability
+
+3.1 **Copyleft.** Any Distribution of the Software or a Modified Work, and any Public Use of a Hosted Service built from the Software or a Modified Work, must be under this same License, in full, at no charge to recipients and users.
+
+3.2 **Complete Corresponding Source.** If You Distribute Object Code or provide a Hosted Service based on the Software or a Modified Work, You must make the Complete Corresponding Source Code of the version actually running or Distributed available to all recipients and all users of the Hosted Service:
+
+(i) via a prominently visible network link from the service or accompanying documentation; and
+(ii) under this License, with build and installation instructions sufficient for a competent developer to reproduce the running instance, excluding only **System Libraries**.
+
+3.3 **No Additional Restrictions.** You may not impose further restrictions or contractual terms on recipients or users that conflict with this License, except those strictly necessary to comply with law or to protect credentials and secrets.
+
+3.4 **Installation Information.** If You Distribute the Software or a Modified Work in or for use with a User Product (consumer or enterprise device), You must provide whatever keys, scripts, or instructions are reasonably required to install and run user‑modified versions on that device, unless doing so would violate other laws.
+
+3.5 **Combined Works.** If You combine or link the Software with other code such that a work is formed that includes any portion of the Software (other than through mere inter‑process communication over standard protocols), the resulting work is a **Modified Work** and must be licensed as a whole under this License. The **System Libraries** exception applies.
+
+---
+
+## 4. Service Offering Restriction (Anti‑SaaS Clause)
+
+4.1 **No Competing Hosted Service.** Except as provided in 4.2, You may **not** provide, operate, or offer the Software or any Modified Work as a Hosted Service to third parties (whether free, freemium, or paid), including operating any multi‑tenant or managed SHGS service that is accessible by the public or by customers outside Your organization.
+
+4.2 **Self‑Hosting Permitted.** You may host the Software or a Modified Work **solely** for Your own organization’s internal use or for a community/guild that You directly administer, provided that: (a) You do not market, brand, or charge for such hosting as a service; (b) all end users belong to and interact within that specific organization/guild; and (c) You comply with Sections 3, 5, and 6.
+
+4.3 **Reserved Right.** The exclusive right to provide a public or commercial Hosted Service for the Software is reserved to the Licensor and its expressly authorized partners.
+
+---
+
+## 5. Acceptable Use; Prohibited Content & Conduct
+
+5.1 **Legal Compliance.** You must not use the Software to store, process, or transmit content, or to engage in conduct, that is illegal under applicable law.
+
+5.2 **Vixeon ToS Compliance.** You must not use the Software in any way that violates the Vixeon ToS. Where a conflict exists between this License and the Vixeon ToS, this License governs licensing of the Software, but Your **use** remains subject to the Vixeon ToS.
+
+5.3 **Enforcement.** Breach of this Section 5 constitutes a material breach and may result in immediate termination under Section 12.
+
+---
+
+## 6. Attribution & Notices
+
+6.1 **Preserve Notices.** You must retain all copyright, license, and attribution notices in Source Code and documentation.
+
+6.2 **Visible Attribution.** Any Public Use (Distribution or Hosted Service) must include prominent attribution: “**Powered by Vixeon SHGS**”, with a link to the official repository or website, in at least one of: (a) a user‑facing “About/Imprint” or settings page; (b) API documentation; or (c) a standard HTTP response header (e.g., `Server: SHGS/<version>`).
+
+6.3 **Modified Works Notice.** Modified Works must carry a clear notice that they differ materially from the original and must include a changelog or commit history link.
+
+---
+
+## 7. Names, Branding, and Trademarks
+
+7.1 **No Trademark License.** No rights are granted to use the Licensor’s Trademarks. Any use of “Vixeon”, “SHGS”, or associated logos requires separate written permission.
+
+7.2 **Renaming Requirement.** Modified Works must not use the names “Vixeon” or “SHGS” (or confusingly similar marks) in their product names. You must adopt distinct branding and state that Your work is **not** affiliated with or endorsed by the Licensor.
+
+7.3 **Fair Use.** Descriptive, factual references to the Software are allowed (e.g., “fork of SHGS”), provided they do not imply sponsorship or endorsement.
+
+---
+
+## 8. Patent License; Defensive Termination
+
+8.1 **Grant.** Each Contributor grants You a perpetual, worldwide, non‑exclusive, royalty‑free patent license to make, have made, use, sell, offer to sell, import, and otherwise transfer the Software, solely to the extent their Contribution necessarily infringes their patent claims.
+
+8.2 **Termination.** If You or Your affiliate institute patent litigation (including a cross‑claim or counterclaim in a lawsuit) alleging that the Software or a Contribution infringes any patent, then any patent licenses granted to You under this License shall terminate as of the date such litigation is filed.
+
+---
+
+## 9. Contributor Terms (Inbound = Outbound; Relicensing Right)
+
+9.1 **Inbound = Outbound.** Unless otherwise agreed in writing, Contributions are licensed to the Licensor and to all users under the same terms as this License.
+
+9.2 **Relicensing Permission to Licensor.** Each Contributor irrevocably grants the Licensor a perpetual, worldwide, non‑exclusive, royalty‑free right to relicense that Contributor’s Contributions, in whole or in part, under different terms (including proprietary terms) at the Licensor’s sole discretion, without additional consideration. This clause does not grant any other party such rights.
+
+9.3 **Representations.** By submitting a Contribution, the Contributor represents that they have the legal right to do so and that the Contribution is their original work (or they have sufficient rights to submit it), and it does not knowingly violate third‑party rights.
+
+9.4 **CLA.** The Licensor may require execution of a Contributor License Agreement. In case of conflict, the CLA controls for the Contribution it covers.
+
+---
+
+## 10. Scope, Boundaries, and Compatibility
+
+10.1 **External Communication.** A work that communicates with the Software solely through network protocols or command‑line interfaces, without including or linking to any portion of the Software, is not by itself a Modified Work.
+
+10.2 **Plug‑ins and Modules.** If a plug‑in, module, or extension uses any internal, non‑stable, or private interfaces of the Software, or links to it (statically or dynamically), it forms a Modified Work and must be licensed under this License.
+
+10.3 **System Libraries Exception.** The obligations of Section 3 do not apply to unmodified System Libraries.
+
+10.4 **Third‑Party Components.** Third‑party components included with the Software remain governed by their own licenses. In case of conflict, those licenses control for those components.
+
+---
+
+## 11. Privacy & Security
+
+11.1 **Credentials and Secrets.** Nothing in this License requires disclosure of private credentials, signing keys, or secrets beyond what is strictly necessary to build and run the Software.
+
+11.2 **Telemetry.** If You add telemetry, analytics, or tracking, You must disclose this prominently and provide users with a reasonable opt‑out where practicable.
+
+---
+
+## 12. Compliance, Termination, and Cure
+
+12.1 **Automatic Termination.** This License terminates automatically for You upon any material breach (including Sections 3–7), without prejudice to any other rights.
+
+12.2 **Cure Period.** If You cease all violation within **30 days** of notice from the Licensor or any Contributor, Your license is provisionally reinstated unless and until the Licensor provides final notice of termination. Permanent termination occurs if You violate again after reinstatement or if the violation is not cured within 30 days.
+
+12.3 **Post‑Termination.** Upon termination, You must stop all use, Distribution, and hosting of the Software and Modified Works, and destroy or return all copies under Your control, except for archival copies retained solely for legal compliance.
+
+12.4 **Injunctive Relief.** The Licensor may seek injunctive or equitable relief for breaches that threaten irreparable harm (including violations of Sections 4, 5, 6, or 7).
+
+---
+
+## 13. Warranty Disclaimer; Limitation of Liability
+
+13.1 **As‑Is.** THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON‑INFRINGEMENT.
+
+13.2 **Limitation.** TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR AND CONTRIBUTORS SHALL NOT BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES; NOR FOR LOSS OF DATA, PROFITS, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THIS LICENSE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. THE AGGREGATE LIABILITY OF THE LICENSOR AND CONTRIBUTORS FOR DIRECT DAMAGES SHALL NOT EXCEED **US\$0**.
+
+13.3 **Allocation of Risk.** You acknowledge that the license fees (if any) are set in reliance on the foregoing limitations of liability and that these limitations form an essential basis of the bargain.
+
+---
+
+## 14. Governing Law and Venue
+
+This License is governed by the laws of **Ukraine**, without regard to conflicts of law principles. The exclusive jurisdiction and venue for any dispute arising out of or relating to this License shall be the competent courts located in **Kyiv, Ukraine**. The UN Convention on Contracts for the International Sale of Goods does not apply.
+
+---
+
+## 15. Miscellaneous
+
+15.1 **No Waiver.** Failure to enforce any provision shall not constitute a waiver.
+
+15.2 **Severability.** If any provision is held unenforceable, it shall be modified to the minimum extent necessary to make it enforceable, and the remainder shall remain in effect.
+
+15.3 **Entire Agreement.** This License is the entire agreement concerning its subject matter and supersedes all prior understandings.
+
+15.4 **License Versions.** The Licensor may publish new versions of this License. You may choose to continue using the version under which You originally received the Software or any later version published by the Licensor.
+
+15.5 **No Assignment.** You may not assign this License or any rights hereunder without the Licensor’s prior written consent. The Licensor may assign this License in connection with a merger, acquisition, or sale of assets.
+
+15.6 **Export Compliance.** You must comply with all applicable export and sanctions laws and regulations.
+
+---
+
+## 16. Notices and Contact
+
+Notices to the Licensor may be sent to **[legal@vixeonapp.com](mailto:legal@vixeonapp.com)** (or another address the Licensor designates). The Software’s canonical home is **[https://vixeonapp.com](https://vixeonapp.com)** (or successor site).
+
+---
+
+### Appendix A — Attribution Implementation (Informative)
+
+* **Web UI:** Add a link in the footer or About page: “Powered by Vixeon SHGS”.
+* **API:** Include an HTTP header `X-Powered-By: Vixeon SHGS` and a link to the source in API docs.
+* **CLI/Console:** Include `--version` output referencing SHGS and this License.
+* **Docs:** Preserve the LICENSE file and a link to the upstream repository.
+
+---
+
+**Copyright ©** Vixeon and contributors. All rights reserved except as expressly granted herein.
