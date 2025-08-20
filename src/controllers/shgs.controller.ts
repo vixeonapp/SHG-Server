@@ -1,4 +1,10 @@
-import { Controller, Get, NotFoundException, Req, UseGuards } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  NotFoundException,
+  Req,
+  UseGuards,
+} from '@nestjs/common';
 import { JwtAuthGuard } from 'src/guards/auth.guard';
 import { GuildService } from 'src/services/guild.service';
 import { RequestWithJwt } from 'src/types/jwt';
@@ -27,5 +33,23 @@ export class ShgsController {
     }
 
     return guild;
+  }
+
+  @UseGuards(JwtAuthGuard)
+  @Get(':id/channels')
+  async getGuildChannels(@Req() req: RequestWithJwt) {
+    const { id } = req.params;
+
+    if (!id || isNaN(Number(id))) {
+      throw new Error('Invalid guild ID');
+    }
+
+    const channels = await this.guildService.getGuildChannels(Number(id));
+
+    if (!channels) {
+      throw new NotFoundException('Channels not found for this guild');
+    }
+
+    return channels;
   }
 }

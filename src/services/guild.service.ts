@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { eq } from 'drizzle-orm';
 import { db } from 'src/db';
-import { guilds, SHGuild } from 'src/db/schema';
+import { channels, guilds, SHChannel, SHGuild } from 'src/db/schema';
 
 @Injectable()
 export class GuildService {
@@ -17,5 +17,14 @@ export class GuildService {
       .limit(1)
       .execute();
     return result[0];
+  }
+
+  async getGuildChannels(id: number): Promise<SHChannel[]> {
+    const result = await db
+      .select()
+      .from(channels)
+      .where(eq(channels.guild_id, id))
+      .execute();
+    return result;
   }
 }

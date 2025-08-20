@@ -13,3 +13,15 @@ export const guilds = pgTable('guilds', {
 
 // SHGS SIDE
 export type SHGuild = InferSelectModel<typeof guilds>;
+
+export const channels = pgTable('channels', {
+  id: bigint({ mode: 'number' }).notNull().primaryKey(),
+  guild_id: bigint({ mode: 'number' })
+    .notNull()
+    .references(() => guilds.id, { onDelete: 'cascade' }),
+  name: varchar({ length: 50 }).notNull(),
+  type: varchar({ length: 10 }).notNull(), // 'text' or 'voice'
+  description: varchar({ length: 255 }),
+});
+
+export type SHChannel = InferSelectModel<typeof channels>;
