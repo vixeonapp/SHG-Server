@@ -9,6 +9,7 @@ export const guilds = pgTable('guilds', {
   banner_url: varchar({ length: 255 }),
   banner_color: varchar({ length: 6 }), // hex code (FFFFFF)
   file_limit: bigint({ mode: 'number' }).notNull().default(0), // in bytes
+  link: varchar({ length: 255 }),
 });
 
 // SHGS SIDE
