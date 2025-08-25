@@ -3,7 +3,7 @@ import { bigint, pgTable, varchar } from 'drizzle-orm/pg-core';
 
 export const guilds = pgTable('guilds', {
   id: bigint({ mode: 'number' }).notNull().primaryKey(),
-  title: varchar({ length: 15 }).notNull(),
+  title: varchar({ length: 50 }).notNull(),
   about: varchar({ length: 255 }),
   icon_url: varchar({ length: 255 }),
   banner_url: varchar({ length: 255 }),
